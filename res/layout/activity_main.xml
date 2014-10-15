@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.instagram.MainActivity" >
+
+    <ImageView
+        android:id="@+id/ivResult"
+        android:layout_width="match_parent"
+        android:layout_height="280sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/chiranjeevi" />
+
+    <Button
+        android:id="@+id/btnBright"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSaturation"
+        android:layout_alignBottom="@+id/btnSaturation"
+        android:layout_centerHorizontal="true"
+        android:onClick="bright"
+        android:text="Bright" />
+
+    <Button
+        android:id="@+id/btnSaturation"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivResult"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/btnBright"
+        android:onClick="SaturationFilter"
+        android:text="saturation" />
+
+    <Button
+        android:id="@+id/btnDark"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnBright"
+        android:layout_alignBottom="@+id/btnBright"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/btnBright"
+        android:onClick="dark"
+        android:text="Dark" />
+
+</RelativeLayout>
